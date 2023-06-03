@@ -1,0 +1,13 @@
+1、确保已安装MySql，设置MySql账号为root 密码为123456
+
+2、创建数据库 create database stinfo charset=utf8;
+
+3、安装项目需要的包，执行该命令pip install -r requirements.txt  
+
+4、迁移文件 python manage.py makemigrations                 python manage.py migrate
+
+5、创建管理员账号 python manage.py createsuperuser
+
+6、启动django        python manage.py runserver
+
+7、在浏览器输入 http://127.0.0.1:8000/

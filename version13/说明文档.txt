@@ -1,0 +1,46 @@
+templates文件夹存放模板
+    index.html 主页
+    teachae/login.html 老师登录页面
+    teacher/register.html 老师注册页面
+    teacher/teacher_info.html 老师信息页面
+    student/login.html 学生登录页面
+    student/register.html 学生注册页面
+    student/teacher_info.html 学生信息页面
+
+
+static文件夹是存放图片,css,js等静态文件
+
+
+media/avatars文件夹存放老师学生头像
+
+
+stinfo是主应用文件夹
+    settings.py 项目的配置文件
+    urls.py 主路由文件
+    views.py 中 index_view() 主页的视图函数
+
+
+teacher是老师应用文件夹
+    migrations文件夹是老师的数据库迁移文件夹
+    admin.py 存放老师的自定义模型类
+    models.py 存放老师的模型类
+    urls.py 老师的路由文件
+    views.py 老师的视图函数文件
+        login_view()  老师的登录视图函数
+        login_check()  老师的登陆状态检测装饰器
+        teacher_info_view() 老师的信息页面视图函数
+        logout_view() 老师的登出视图函数
+        register_view() 老师的注册视图函数
+
+
+student是学生应用文件夹
+    migrations文件夹是学生的数据库迁移文件夹
+    admin.py 存放学生的自定义模型类
+    models.py 存放学生的模型类
+    urls.py 学生的路由文件
+    views.py 学生的视图函数文件
+        login_view()  学生的登录视图函数
+        login_check()  学生的登陆状态检测装饰器
+        teacher_info_view() 学生的信息页面视图函数
+        logout_view() 学生的登出视图函数
+        register_view() 学生的注册视图函数
